@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>École & Entreprise - Dylan Spinelli</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .exp-logo-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        /* Styles pour les images de la DSI */
+        .dsi-presentation {
+            margin: 2rem 0;
+        }
+
+        .dsi-image-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .dsi-img {
+            max-width: 100%; 
+            height: auto; 
+            background-color: white; 
+            padding: 1rem; 
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Grille pour les équipes (2 colonnes) */
+        .teams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .team-item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        
+        .team-caption {
+            color: #d4d4d8;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        /* Petit style pour les listes de valeurs */
+        .values-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .value-tag {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #fff;
+            border: 1px solid #3f3f46;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-white">Dylan</span><span class="logo-green"> Spinelli</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apropos.html">À Propos</a></li>
+          <li><a href="bts.html">BTS SIO</a></li>
+          <li><a href="parcours.html" class="active">École & Entreprise</a></li>
+          <li><a href="missions.html">Missions (E5)</a></li>
+          <li><a href="projets.html">Projets (E6)</a></li>
+          <li><a href="veille.html">Veille</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <h2>École & Entreprise</h2>
+        
+        <div class="timeline-layout">
+          
+          <div class="experience-block">
+            <div class="exp-logo-container">
+                <img 
+                    src="images/aag.png" 
+                    alt="Logo Alliance Automotive Group" 
+                    style="max-width: 500px; width: 100%; height: auto; background-color: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
+                >
+            </div>
+
+            <h3>Alliance Automotive Group</h3>
+            <span class="role">Technicien Service Desk - Alternance</span>
+            
+            <p>
+              <strong>Alliance Automotive Group (AAG)</strong> est un acteur majeur de la distribution indépendante de pièces et de fournitures pour le marché de la réparation automobile et poids lourd en Europe. Filiale du géant américain <strong>Genuine Parts Company (GPC)</strong>, le groupe réalise un chiffre d'affaires mondial de plus de 20 milliards d'euros.
+            </p>
+            
+            <p style="margin-top: 1rem;">
+                En <strong>France</strong>, AAG représente une force de frappe logistique et commerciale majeure :
+            </p>
+            <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; color: #d4d4d8;">
+                <li><strong>1,2 Milliard d'€</strong> de chiffre d'affaires annuel.</li>
+                <li><strong>4 500</strong> collaborateurs.</li>
+                <li><strong>16</strong> plateformes de distribution.</li>
+                <li><strong>1 000</strong> points de vente (dont 250 filiales).</li>
+            </ul>
+
+            <p>
+                Notre mission, <strong>"WE CARE FOR REPAIR"</strong>, est de faciliter la réparation automobile et poids lourds partout en France. L'entreprise s'appuie sur 5 valeurs fondamentales :
+            </p>
+            <div class="values-list">
+                <span class="value-tag">🤝 Esprit d'Équipe</span>
+                <span class="value-tag">🛡️ Responsabilité</span>
+                <span class="value-tag">🚀 Performance</span>
+                <span class="value-tag">💡 Pragmatisme</span>
+                <span class="value-tag">⚖️ Intégrité</span>
+            </div>
+
+            <h4>Organisation de la DSI</h4>
+            <div class="dsi-presentation">
+                <p>
+                    La Direction des Systèmes d'Information (IT For Business) est structurée pour soutenir la performance et la transformation digitale du groupe.
+                </p>
+                
+                <div class="dsi-image-container">
+                    <img src="images/dsi.png" alt="Schéma Organisation DSI" class="dsi-img" style="max-width: 500px;">
+                    <p class="team-caption">Vue d'ensemble IT For Business</p>
+                </div>
+
+                <div class="dsi-image-container">
+                    <img src="images/managers_dsi.png" alt="Codir DSI" class="dsi-img" style="max-width: 600px;">
+                    <p class="team-caption">Le Comité de Direction IT (CODIR)</p>
+                </div>
+
+                <p>Les opérations IT sont divisées en plusieurs pôles d'expertise :</p>
+                
+                <div class="teams-grid">
+                    
+                    <div class="team-item">
+                        <img src="images/desk.png" alt="Equipe Service Desk" class="dsi-img" style="border: 2px solid #8934d3;">
+                        <p class="team-caption" style="color: #8934d3;">Support Service Desk (Mon Équipe)</p>
+                    </div>
+
+                    <div class="team-item">
+                        <img src="images/proxy.png" alt="Equipe Proximité" class="dsi-img">
+                        <p class="team-caption">Support Proximité (Régions)</p>
+                    </div>
+
+                    <div class="team-item">
+                        <img src="images/infra.png" alt="Equipe Infrastructure" class="dsi-img">
+                        <p class="team-caption">Infrastructure & Cloud</p>
+                    </div>
+                    
+                    <div class="team-item">
+                        <img src="images/supply_chain.png" alt="Equipe Achats IT" class="dsi-img" style="max-height: 300px; width: auto;">
+                        <p class="team-caption">Achats & Équipements IT</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <h4>Mes Missions Principales</h4>
+            <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                <li><strong>Support Utilisateur :</strong> Gestion des incidents (Niveau 1 & 2) et des demandes de service via l'outil de ticketing. Assistance à distance.</li>
+                <li><strong>Administration Système :</strong> Gestion quotidienne de l'Active Directory (création de comptes, groupes de sécurité) et administration Office 365 (Exchange, Teams).</li>
+                <li><strong>Projets & Infrastructure :</strong> Participation active aux projets de migration, mise en place de nouvelles solutions de sécurité et documentation technique.</li>
+                <li><strong>Gestion de Parc :</strong> Préparation, masterisation et déploiement des postes de travail (Windows 10/11) et gestion des stocks.</li>
+            </ul>
+
+            <h4>Environnement Technique</h4>
+            <div class="tags">
+                <span class="tag">ServiceNow</span>
+                <span class="tag">Active Directory</span>
+                <span class="tag">Windows Server</span>
+                <span class="tag">Office 365</span>
+                <span class="tag">TCP/IP</span>
+            </div>
+          </div>
+
+          <div class="experience-block">
+            <div class="exp-logo-container">
+                <img 
+                    src="images/ecole.png" 
+                    alt="Logo Paris Ynov Campus" 
+                    style="max-width: 250px; width: 100%; height: auto; background-color: white; padding: 1rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
+                >
+            </div>
+
+            <h3>Paris Ynov Campus</h3>
+            <span class="role">BTS Services Informatiques aux Organisations</span>
+            
+            <p style="font-weight: bold; margin-bottom: 1rem; color: white;">
+              Paris Ynov Campus, l’école digitale dédiée aux métiers de demain.
+            </p>
+            
+            <p>
+              Paris Ynov Campus est une institution dédiée à la formation dans les domaines du numérique et de l'innovation. Fondé pour répondre à la demande croissante de compétences spécialisées, le campus offre des programmes allant du Bachelor au Mastère dans des secteurs variés tels que l'informatique, le digital marketing, et la création 3D.
+            </p>
+            
+            <p>
+              Le campus se distingue par son approche pratique, encourageant les projets réels et les collaborations avec les entreprises pour préparer les étudiants à des carrières réussies. Reconnu pour son engagement envers l'innovation et l'excellence éducative, Paris Ynov Campus continue d'évoluer, intégrant les dernières technologies pour former les leaders de demain dans l'industrie numérique.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Dylan Spinelli - Tous droits réservés</p>
+      <p class="footer-small">BTS SIO SISR - Ynov Campus Nanterre</p>
+    </footer>
+  </body>
+</html>
