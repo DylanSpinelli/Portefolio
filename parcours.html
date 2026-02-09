@@ -6,9 +6,9 @@
     <title>École & Entreprise - Dylan Spinelli</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        /* 1. ON ÉLARGIT LA PAGE POUR AVOIR DE LA PLACE */
+        /* 1. CONFIGURATION LARGEUR PAGE */
         .timeline-layout {
-            max-width: 1200px; /* Plus large que les 900px d'avant */
+            max-width: 1200px; 
             margin: 0 auto;
         }
 
@@ -26,11 +26,11 @@
             margin-bottom: 2rem;
         }
 
-        /* Images DSI et CODIR (Haut de page) */
+        /* Images DSI et CODIR */
         .dsi-img-top {
             max-width: 100%; 
-            width: 100%; /* Prend toute la largeur dispo */
-            max-width: 800px; /* Mais s'arrête à 800px pour ne pas être géante */
+            width: 100%; 
+            max-width: 800px; 
             height: auto; 
             background-color: white; 
             padding: 1rem; 
@@ -40,17 +40,15 @@
             margin: 0 auto;
         }
 
-        /* 2. LA GRILLE ÉQUIPES : CENTRÉE ET LARGE */
+        /* 2. GRILLE ÉQUIPES */
         .teams-grid {
             display: grid;
-            /* DEUX COLONNES STRICTES ET ÉGALES */
             grid-template-columns: 1fr 1fr; 
-            gap: 3rem; /* Gros écart pour aérer */
-            margin: 3rem auto; /* Centré verticalement et horizontalement */
+            gap: 3rem; 
+            margin: 3rem auto; 
             width: 100%;
         }
 
-        /* Sur mobile, on repasse à une seule colonne */
         @media (max-width: 900px) {
             .teams-grid {
                 grid-template-columns: 1fr;
@@ -64,11 +62,11 @@
             justify-content: flex-end;
         }
         
-        /* 3. LE SECRET : ON FORCE LES IMAGES À REMPLIR LA CASE */
+        /* 3. IMAGES REMPLISSAGE */
         .team-img {
-            width: 100%; /* Force l'image à prendre toute la largeur de la colonne */
+            width: 100%; 
             height: auto;
-            object-fit: contain; /* Garde les proportions */
+            object-fit: contain; 
             background-color: white;
             padding: 0.5rem;
             border-radius: 10px;
@@ -76,10 +74,9 @@
             display: block;
         }
 
-        /* Cas spécifique pour l'image Achats si elle est trop haute */
         .team-img.limit-height {
-            max-height: 400px; /* Limite la hauteur pour éviter qu'elle soit géante verticalement */
-            width: auto; /* Laisse la largeur s'adapter */
+            max-height: 400px; 
+            width: auto; 
             max-width: 100%;
             margin: 0 auto;
         }
@@ -91,7 +88,6 @@
             font-weight: 600;
         }
         
-        /* Styles des tags valeurs */
         .values-list {
             display: flex;
             flex-wrap: wrap;
@@ -218,18 +214,18 @@
             <h4>Mes Missions Principales</h4>
             <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
                 <li><strong>Support Utilisateur :</strong> Gestion des incidents (Niveau 1 & 2) et des demandes de service via l'outil de ticketing. Assistance à distance.</li>
-                <li><strong>Administration Système :</strong> Gestion quotidienne de l'Active Directory (création de comptes, groupes de sécurité) et administration Office 365 (Exchange, Teams).</li>
-                <li><strong>Projets & Infrastructure :</strong> Participation active aux projets de migration, mise en place de nouvelles solutions de sécurité et documentation technique.</li>
-                <li><strong>Gestion de Parc :</strong> Préparation, masterisation et déploiement des postes de travail (Windows 10/11) et gestion des stocks.</li>
+                <li><strong>Administration Système :</strong> Gestion quotidienne de l'Active Directory (création de comptes, groupes de sécurité) et administration Office 365.</li>
+                <li><strong>Gestion des Incidents Majeurs (P1) :</strong> Application de la procédure d'urgence pour garantir la continuité de service et le respect des <strong>SLA</strong>.</li>
+                <li><strong>Amélioration Continue (ITIL) :</strong> Rédaction de procédures techniques, gestion de la base de connaissances et optimisation des processus de support.</li>
             </ul>
 
             <h4>Environnement Technique</h4>
             <div class="tags">
                 <span class="tag">ServiceNow</span>
                 <span class="tag">Active Directory</span>
-                <span class="tag">Windows Server</span>
                 <span class="tag">Office 365</span>
-                <span class="tag">TCP/IP</span>
+                <span class="tag">Centreon</span>
+                <span class="tag">Bomgar</span>
             </div>
           </div>
 
