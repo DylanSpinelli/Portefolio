@@ -6,12 +6,17 @@
     <title>École & Entreprise - Dylan Spinelli</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+        /* 1. ON ÉLARGIT LA PAGE POUR AVOIR DE LA PLACE */
+        .timeline-layout {
+            max-width: 1200px; /* Plus large que les 900px d'avant */
+            margin: 0 auto;
+        }
+
         .exp-logo-container {
             text-align: center;
             margin-bottom: 2rem;
         }
         
-        /* Styles pour les images de la DSI */
         .dsi-presentation {
             margin: 2rem 0;
         }
@@ -21,8 +26,11 @@
             margin-bottom: 2rem;
         }
 
-        .dsi-img {
+        /* Images DSI et CODIR (Haut de page) */
+        .dsi-img-top {
             max-width: 100%; 
+            width: 100%; /* Prend toute la largeur dispo */
+            max-width: 800px; /* Mais s'arrête à 800px pour ne pas être géante */
             height: auto; 
             background-color: white; 
             padding: 1rem; 
@@ -32,12 +40,21 @@
             margin: 0 auto;
         }
 
-        /* Grille pour les équipes (2 colonnes) */
+        /* 2. LA GRILLE ÉQUIPES : CENTRÉE ET LARGE */
         .teams-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
+            /* DEUX COLONNES STRICTES ET ÉGALES */
+            grid-template-columns: 1fr 1fr; 
+            gap: 3rem; /* Gros écart pour aérer */
+            margin: 3rem auto; /* Centré verticalement et horizontalement */
+            width: 100%;
+        }
+
+        /* Sur mobile, on repasse à une seule colonne */
+        @media (max-width: 900px) {
+            .teams-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .team-item {
@@ -47,14 +64,34 @@
             justify-content: flex-end;
         }
         
+        /* 3. LE SECRET : ON FORCE LES IMAGES À REMPLIR LA CASE */
+        .team-img {
+            width: 100%; /* Force l'image à prendre toute la largeur de la colonne */
+            height: auto;
+            object-fit: contain; /* Garde les proportions */
+            background-color: white;
+            padding: 0.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            display: block;
+        }
+
+        /* Cas spécifique pour l'image Achats si elle est trop haute */
+        .team-img.limit-height {
+            max-height: 400px; /* Limite la hauteur pour éviter qu'elle soit géante verticalement */
+            width: auto; /* Laisse la largeur s'adapter */
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
         .team-caption {
             color: #d4d4d8;
-            margin-top: 0.5rem;
-            font-size: 0.9rem;
+            margin-top: 1rem;
+            font-size: 1.1rem;
             font-weight: 600;
         }
         
-        /* Petit style pour les listes de valeurs */
+        /* Styles des tags valeurs */
         .values-list {
             display: flex;
             flex-wrap: wrap;
@@ -142,12 +179,12 @@
                 </p>
                 
                 <div class="dsi-image-container">
-                    <img src="images/dsi.png" alt="Schéma Organisation DSI" class="dsi-img" style="max-width: 500px;">
+                    <img src="images/dsi.png" alt="Schéma Organisation DSI" class="dsi-img-top">
                     <p class="team-caption">Vue d'ensemble IT For Business</p>
                 </div>
 
                 <div class="dsi-image-container">
-                    <img src="images/managers_dsi.png" alt="Codir DSI" class="dsi-img" style="max-width: 600px;">
+                    <img src="images/managers_dsi.png" alt="Codir DSI" class="dsi-img-top">
                     <p class="team-caption">Le Comité de Direction IT (CODIR)</p>
                 </div>
 
@@ -156,22 +193,22 @@
                 <div class="teams-grid">
                     
                     <div class="team-item">
-                        <img src="images/desk.png" alt="Equipe Service Desk" class="dsi-img" style="border: 2px solid #8934d3;">
+                        <img src="images/desk.png" alt="Equipe Service Desk" class="team-img" style="border: 2px solid #8934d3;">
                         <p class="team-caption" style="color: #8934d3;">Support Service Desk (Mon Équipe)</p>
                     </div>
 
                     <div class="team-item">
-                        <img src="images/proxy.png" alt="Equipe Proximité" class="dsi-img">
+                        <img src="images/proxy.png" alt="Equipe Proximité" class="team-img">
                         <p class="team-caption">Support Proximité (Régions)</p>
                     </div>
 
                     <div class="team-item">
-                        <img src="images/infra.png" alt="Equipe Infrastructure" class="dsi-img">
+                        <img src="images/infra.png" alt="Equipe Infrastructure" class="team-img">
                         <p class="team-caption">Infrastructure & Cloud</p>
                     </div>
                     
                     <div class="team-item">
-                        <img src="images/supply_chain.png" alt="Equipe Achats IT" class="dsi-img" style="max-height: 300px; width: auto;">
+                        <img src="images/supply_chain.png" alt="Equipe Achats IT" class="team-img limit-height">
                         <p class="team-caption">Achats & Équipements IT</p>
                     </div>
 
