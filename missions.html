@@ -13,18 +13,6 @@
         gap: 2rem;
         margin-bottom: 2rem;
       }
-
-      .btn-group {
-        margin-top: auto;
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-
-      /* Règle pour changer l'icône du bouton Sujet tout en gardant le style btn-doc */
-      .btn-doc.sujet::before {
-        content: "📝" !important;
-      }
     </style>
   </head>
   <body>
@@ -60,19 +48,9 @@
               Subnet Mask) pour optimiser un plan d'adressage réseau.
               Configuration complète d'une maquette sous Cisco Packet Tracer.
             </p>
-            <div class="btn-group">
-              <a
-                href="documents/Portefolio - TP VLSM Lab1 Subnetting.pdf"
-                target="_blank"
-                class="btn-doc"
-                >Documentation</a
-              >
-              <a
-                href="documents/Lab1_FR.pdf"
-                target="_blank"
-                class="btn-doc sujet"
-                >Sujet TP</a
-              >
+            <div class="card-actions">
+              <a href="documents/Portefolio - TP VLSM Lab1 Subnetting.pdf" target="_blank" class="btn-action btn-doc">📄 Doc</a>
+              <a href="documents/Lab1_FR.pdf" target="_blank" class="btn-action btn-sujet">📝 Sujet</a>
             </div>
           </div>
 
@@ -84,19 +62,9 @@
               place d'un agent relais DHCP (ip helper-address) pour
               l'architecture client/serveur.
             </p>
-            <div class="btn-group">
-              <a
-                href="documents/Portefolio - Atelier 1 DHCP.pdf"
-                target="_blank"
-                class="btn-doc"
-                >Documentation</a
-              >
-              <a
-                href="documents/Atelier DHCP.pdf"
-                target="_blank"
-                class="btn-doc sujet"
-                >Sujet Atelier</a
-              >
+            <div class="card-actions">
+              <a href="documents/Portefolio - Atelier 1 DHCP.pdf" target="_blank" class="btn-action btn-doc">📄 Doc</a>
+              <a href="documents/Atelier DHCP.pdf" target="_blank" class="btn-action btn-sujet">📝 Sujet</a>
             </div>
           </div>
 
@@ -106,25 +74,11 @@
               Étude et configuration du protocole STP pour prévenir les boucles réseau de niveau 2.
               Manipulation des priorités de pont (Bridge Priority) et analyse des états de ports.
             </p>
-            <div class="btn-group">
-              <a
-                href="documents/Portefolio - TP STP.pdf"
-                target="_blank"
-                class="btn-doc"
-                >Documentation</a
-              >
-              <a
-                href="documents/TP 1 _STP.pdf"
-                target="_blank"
-                class="btn-doc sujet"
-                >Sujet TP 1</a
-              >
-              <a
-                href="documents/TP 2 STP.pdf"
-                target="_blank"
-                class="btn-doc sujet"
-                >Sujet TP 2</a
-              >
+            <div class="card-actions">
+              <a href="documents/Portefolio - TP STP.pdf" target="_blank" class="btn-action btn-doc" style="flex-basis: 100%;">📄 Doc</a>
+              
+              <a href="documents/TP 1 _STP.pdf" target="_blank" class="btn-action btn-sujet">📝 TP 1</a>
+              <a href="documents/TP 2 STP.pdf" target="_blank" class="btn-action btn-sujet">📝 TP 2</a>
             </div>
           </div>
 
@@ -134,9 +88,9 @@
               Segmentation du réseau local à l'aide de VLANs pour améliorer la sécurité et la performance. 
               Configuration des ports d'accès et des liaisons Trunk (802.1Q).
             </p>
-            <div class="btn-group">
-              <a href="#" target="_blank" class="btn-doc">Documentation</a>
-              <a href="#" target="_blank" class="btn-doc sujet">Sujet TP</a>
+            <div class="card-actions">
+              <a href="#" target="_blank" class="btn-action btn-doc">📄 Doc</a>
+              <a href="documents/TP3-VLAN Dylan Spinelli.pdf" target="_blank" class="btn-action btn-sujet">📝 Sujet</a>
             </div>
           </div>
 
@@ -153,19 +107,19 @@
               Participation à l'administration de l'outil ITSM ServiceNow.
               Gestion des catalogues de services et workflows.
             </p>
-            <div class="btn-group">
-              <a href="#" target="_blank" class="btn-doc">Documentation</a>
+            <div class="card-actions">
+              <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
             </div>
           </div>
 
           <div class="card">
             <h3>Procédure P1</h3>
             <p class="text-light-gray" style="flex-grow: 1">
-              Mise en œuvre de la procédure de gestion des incidents majeurs (P1). 
+              Rédaction et mise en œuvre de la procédure de gestion des incidents majeurs (P1). 
               Définition des processus d'escalade, des rôles et de la communication de crise.
             </p>
-            <div class="btn-group">
-              <a href="#" target="_blank" class="btn-doc">Documentation</a>
+            <div class="card-actions">
+              <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
             </div>
           </div>
 
@@ -175,8 +129,8 @@
               Déploiement et utilisation de la solution Bomgar pour la Prise en
               Main À Distance sécurisée.
             </p>
-            <div class="btn-group">
-              <a href="#" target="_blank" class="btn-doc">Documentation</a>
+            <div class="card-actions">
+              <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
             </div>
           </div>
 
@@ -184,20 +138,21 @@
             <h3>Administration Active Directory</h3>
             <p class="text-light-gray" style="flex-grow: 1">
               Gestion quotidienne de l'annuaire AD : création de comptes utilisateurs, 
-              gestion des groupes de sécurité
+              gestion des groupes de sécurité et application des stratégies de groupe (GPO).
             </p>
-            <div class="btn-group">
-              <a href="#" target="_blank" class="btn-doc">Documentation</a>
+            <div class="card-actions">
+              <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
             </div>
           </div>
 
           <div class="card">
             <h3>Supervision Centreon</h3>
             <p class="text-light-gray" style="flex-grow: 1">
-              Surveillance de l'état des serveurs et équipements réseaux sur les différents sites (Switchs, Routeurs).
+              Mise en place et configuration de la solution de supervision Centreon. 
+              Surveillance de l'état des serveurs et équipements réseaux (Ping, SNMP).
             </p>
-            <div class="btn-group">
-              <a href="#" target="_blank" class="btn-doc">Documentation</a>
+            <div class="card-actions">
+              <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
             </div>
           </div>
 
@@ -213,8 +168,8 @@
               Serveur Proxmox personnel pour héberger divers services (Pi-hole,
               Plex, Nextcloud) via Docker et LXC.
             </p>
-            <div class="btn-group">
-              <a href="#" target="_blank" class="btn-doc">Documentation</a>
+            <div class="card-actions">
+              <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
             </div>
           </div>
           <div class="card">
@@ -223,8 +178,8 @@
               Installation et sécurisation d'un serveur VPS Linux pour héberger
               des serveurs de jeux (Minecraft/FiveM).
             </p>
-            <div class="btn-group">
-              <a href="#" target="_blank" class="btn-doc">Documentation</a>
+            <div class="card-actions">
+              <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
             </div>
           </div>
         </div>
