@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Missions E5 - Dylan Spinelli</title>
+    <title>Épreuve E5 - Dylan Spinelli</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       /* CORRECTION RESPONSIVE SPÉCIFIQUE POUR CETTE PAGE */
@@ -11,6 +11,55 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 2rem;
+      }
+
+      /* STYLE DU BOUTON TABLEAU DE SYNTHÈSE CENTRÉ */
+      .synthesis-banner {
+        background: linear-gradient(135deg, rgba(137, 52, 211, 0.2), rgba(137, 52, 211, 0.05));
+        border: 1px solid #8934d3;
+        border-radius: 12px;
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .synthesis-text h3 {
+        color: #ffffff;
+        margin: 0 0 0.5rem 0;
+        font-size: 1.4rem;
+      }
+
+      .synthesis-text p {
+        color: #a1a1aa;
+        margin: 0;
+        font-size: 0.95rem;
+        max-width: 600px;
+      }
+
+      .btn-synthesis {
+        background-color: #8934d3;
+        color: white;
+        text-decoration: none;
+        padding: 0.8rem 1.8rem;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+      }
+
+      .btn-synthesis:hover {
+        background-color: #a855f7;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(137, 52, 211, 0.4);
       }
 
       /* SYSTÈME D'ACCORDÉON POUR ALLÉGER LA PAGE */
@@ -42,7 +91,7 @@
         display: flex;
         align-items: center;
         gap: 12px;
-        list-style: none; /* Cache la flèche moche par défaut */
+        list-style: none;
         position: relative;
         font-weight: 600;
         outline: none;
@@ -86,7 +135,7 @@
         font-size: 0.85rem;
         font-weight: 500;
         margin-left: auto;
-        margin-right: 1.5rem; /* Laisse la place à la flèche */
+        margin-right: 1.5rem;
         background: rgba(137, 52, 211, 0.15);
         color: #d4d4d8;
         padding: 0.3rem 0.8rem;
@@ -109,8 +158,7 @@
     <nav>
       <div class="nav-container">
         <div class="logo">
-          <span class="logo-white">Dylan</span
-          ><span class="logo-green"> Spinelli</span>
+          <span class="logo-white">Dylan</span><span class="logo-green"> Spinelli</span>
         </div>
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
@@ -125,11 +173,25 @@
 
     <main>
       <div class="container">
-        <h2>Missions <span class="highlight">E5</span></h2>
+        <h2>Épreuve <span class="highlight">E5</span></h2>
+
+        <!-- BANDEAU TABLEAU DE SYNTHÈSE -->
+        <div class="synthesis-banner">
+          <div class="synthesis-text">
+            <h3>Tableau de Synthèse E5</h3>
+            <p>Document officiel recensant l'ensemble de mes compétences et réalisations professionnelles.</p>
+          </div>
+          <a href="documents/BTS SIO 2025 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse (1).pdf" target="_blank" class="btn-synthesis">
+            📄 Consulter le tableau
+          </a>
+        </div>
 
         <h3 class="subsection-title">Formation en École</h3>
         <p class="text-gray" style="margin-bottom: 2rem;">Retrouvez ci-dessous l'ensemble des travaux pratiques réalisés en cours, classés par domaine d'expertise SISR. Cliquez sur une catégorie pour l'ouvrir.</p>
 
+        <!-- ========================================== -->
+        <!-- 1. ADMIN SYSTÈME & SERVICES (U5)           -->
+        <!-- ========================================== -->
         <details class="accordion-container">
           <summary class="category-title">
             💻 Administration Système & Services
@@ -184,7 +246,6 @@
               </p>
               <div class="card-actions">                
                 <a href="documents/TP Linux.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
-                
               </div>
             </div>
 
@@ -221,6 +282,9 @@
           </div>
         </details>
 
+        <!-- ========================================== -->
+        <!-- 2. INFRASTRUCTURE RÉSEAU (U6)              -->
+        <!-- ========================================== -->
         <details class="accordion-container">
           <summary class="category-title">
             🌐 Infrastructure Réseau
@@ -340,9 +404,12 @@
           </div>
         </details>
 
+        <!-- ========================================== -->
+        <!-- 3. CYBERSÉCURITÉ (U7)                      -->
+        <!-- ========================================== -->
         <details class="accordion-container">
           <summary class="category-title">
-            🛡️ Cybersécurité
+            🛡 Cybersécurité
             <span class="project-count">4 projets</span>
           </summary>
           <div class="responsive-grid">
@@ -392,6 +459,9 @@
 
         <div style="margin-top: 4rem"></div>
 
+        <!-- ========================================== -->
+        <!-- FORMATION EN ENTREPRISE                    -->
+        <!-- ========================================== -->
         <h3 class="subsection-title">Formation en Entreprise</h3>
         <details class="accordion-container">
           <summary class="category-title">
@@ -453,6 +523,9 @@
 
         <div style="margin-top: 4rem"></div>
 
+        <!-- ========================================== -->
+        <!-- PROJETS PERSONNELS                         -->
+        <!-- ========================================== -->
         <h3 class="subsection-title">Projets Personnels</h3>
         <details class="accordion-container">
           <summary class="category-title">
