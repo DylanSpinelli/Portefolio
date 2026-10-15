@@ -13,12 +13,12 @@
         gap: 2rem;
       }
 
-      /* STYLE DU BOUTON TABLEAU DE SYNTHÈSE CENTRÉ */
+      /* STYLE DU BANDEAU ET DE LA VISIONNEUSE DU TABLEAU DE SYNTHÈSE */
       .synthesis-banner {
         background: linear-gradient(135deg, rgba(137, 52, 211, 0.2), rgba(137, 52, 211, 0.05));
         border: 1px solid #8934d3;
         border-radius: 12px;
-        padding: 2rem 1.5rem;
+        padding: 1.8rem 1.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -31,8 +31,8 @@
 
       .synthesis-text h3 {
         color: #ffffff;
-        margin: 0 0 0.5rem 0;
-        font-size: 1.4rem;
+        margin: 0 0 0.4rem 0;
+        font-size: 1.35rem;
       }
 
       .synthesis-text p {
@@ -42,12 +42,31 @@
         max-width: 600px;
       }
 
+      /* TAILLE INTERMÉDIAIRE ÉQUILIBRÉE POUR LE PDF */
+      .pdf-viewer-container {
+        width: 100%;
+        max-width: 900px;
+        height: 550px;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #3f3f46;
+        background-color: #18181b;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .pdf-viewer-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
       .btn-synthesis {
         background-color: #8934d3;
         color: white;
         text-decoration: none;
-        padding: 0.8rem 1.8rem;
+        padding: 0.75rem 1.6rem;
         border-radius: 8px;
+        font-size: 0.95rem;
         font-weight: 600;
         transition: all 0.3s ease;
         display: inline-flex;
@@ -152,6 +171,12 @@
         from { opacity: 0; transform: translateY(-10px); }
         to { opacity: 1; transform: translateY(0); }
       }
+
+      @media (max-width: 768px) {
+        .pdf-viewer-container {
+          height: 350px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -175,14 +200,19 @@
       <div class="container">
         <h2>Épreuve <span class="highlight">E5</span></h2>
 
-        <!-- BANDEAU TABLEAU DE SYNTHÈSE -->
+        <!-- BANDEAU TABLEAU DE SYNTHÈSE AVEC APERÇU DIRECT ÉQUILIBRÉ -->
         <div class="synthesis-banner">
           <div class="synthesis-text">
             <h3>Tableau de Synthèse E5</h3>
             <p>Document officiel recensant l'ensemble de mes compétences et réalisations professionnelles.</p>
           </div>
-          <a href="documents/BTS SIO 2025 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse (1).pdf" target="_blank" class="btn-synthesis">
-            📄 Consulter le tableau
+          
+          <div class="pdf-viewer-container">
+            <iframe src="documents/BTS SIO 2027 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse (1).pdf" title="Tableau de Synthèse E5"></iframe>
+          </div>
+
+          <a href="documents/BTS SIO 2027 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse (1).pdf" target="_blank" class="btn-synthesis">
+            🔍 Ouvrir en plein écran / Télécharger
           </a>
         </div>
 
