@@ -1,198 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veille Technologique - Dylan Spinelli</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        .tool-box {
-            background: rgba(39, 39, 42, 0.5);
-            padding: 1rem 1.2rem;
-            border-radius: 8px;
-            border-left: 4px solid #8934d3;
-            margin-bottom: 1rem;
-        }
-        .tool-box h4 {
-            color: #ffffff;
-            margin: 0 0 0.4rem 0;
-            font-size: 1.05rem;
-        }
-        .query-list {
-            list-style: none;
-            padding: 0;
-            margin: 1rem 0 0 0;
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
-        }
-        .query-item {
-            background: rgba(24, 24, 27, 0.8);
-            border: 1px solid #3f3f46;
-            padding: 0.75rem 1rem;
-            border-radius: 6px;
-            font-family: monospace;
-            font-size: 0.85rem;
-            color: #d4d4d8;
-            line-height: 1.4;
-            word-break: break-word;
-            transition: border-color 0.2s ease;
-        }
-        .query-item:hover {
-            border-color: #8934d3;
-        }
-        .query-badge {
-            display: inline-block;
-            background: rgba(137, 52, 211, 0.2);
-            color: #c084fc;
-            border: 1px solid rgba(137, 52, 211, 0.4);
-            font-family: sans-serif;
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 0.15rem 0.5rem;
-            border-radius: 4px;
-            margin-bottom: 0.4rem;
-        }
+      .tool-box {
+        background: rgba(39, 39, 42, 0.5);
+        padding: 1rem 1.2rem;
+        border-radius: 8px;
+        border-left: 4px solid #8934d3;
+        margin-bottom: 1rem;
+      }
+      .tool-box h4 {
+        color: #ffffff;
+        margin: 0 0 0.4rem 0;
+        font-size: 1.05rem;
+      }
+      .query-list {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .query-item {
+        background: rgba(24, 24, 27, 0.8);
+        border: 1px solid #3f3f46;
+        padding: 0.75rem 1rem;
+        border-radius: 6px;
+        font-family: monospace;
+        font-size: 0.85rem;
+        color: #d4d4d8;
+        line-height: 1.4;
+        word-break: break-word;
+        transition: border-color 0.2s ease;
+      }
+      .query-item:hover {
+        border-color: #8934d3;
+      }
+      .query-badge {
+        display: inline-block;
+        background: rgba(137, 52, 211, 0.2);
+        color: #c084fc;
+        border: 1px solid rgba(137, 52, 211, 0.4);
+        font-family: sans-serif;
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.15rem 0.5rem;
+        border-radius: 4px;
+        margin-bottom: 0.4rem;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="nav-container">
-            <div class="logo"><span class="logo-white">Dylan</span><span class="logo-green"> Spinelli</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="parcours.html">Entreprise</a></li>
-                <li><a href="missions.html">Épreuve E5</a></li>
-                <li><a href="projets.html">Épreuve E6</a></li>
-                <li><a href="veille.html" class="active">Veille Technologique</a></li>
-                <li><a href="https://www.linkedin.com/in/dylanspinelli/">LinkedIn</a></li>
-            </ul>
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-white">Dylan</span
+          ><span class="logo-green"> Spinelli</span>
         </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="parcours.html">Entreprise</a></li>
+          <li><a href="missions.html">Épreuve E5</a></li>
+          <li><a href="projets.html">Épreuve E6</a></li>
+          <li><a href="veille.html" class="active">Veille Technologique</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/dylanspinelli/">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <main>
-        <div class="container">
-            <h2>Veille <span class="highlight">Technologique</span></h2>
-            
-            <p class="text-gray" style="margin-bottom: 2rem; text-align: center;">
-                La veille technologique est essentielle pour un administrateur systèmes et réseaux afin d'anticiper les nouvelles menaces et d'adapter les infrastructures.
+      <div class="container">
+        <h2>Veille <span class="highlight">Technologique</span></h2>
+
+        <p class="text-gray" style="margin-bottom: 2rem; text-align: center">
+          La veille technologique est essentielle pour un administrateur
+          systèmes et réseaux afin d'anticiper les nouvelles menaces et
+          d'adapter les infrastructures.
+        </p>
+
+        <!-- SECTION HAUT : THÉMATIQUE ET OUTILS -->
+        <div class="grid-2">
+          <div class="card">
+            <h3>Thématique Suivie</h3>
+            <h4
+              style="
+                color: #8934d3;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                font-size: 1.2rem;
+              "
+            >
+              🤖 L'utilisation de l'IA dans la détection des cyberattaques
+            </h4>
+            <p class="text-light-gray" style="margin-top: 1rem">
+              Mon sujet d'étude porte sur la manière dont l'Intelligence
+              Artificielle et le Machine Learning révolutionnent la
+              cybersécurité défensive. J'étudie comment ces technologies
+              permettent de :
+            </p>
+            <ul style="margin-top: 1rem; margin-left: 1.5rem; color: #d4d4d8">
+              <li style="margin-bottom: 0.6rem">
+                Détecter les comportements anormaux (menaces Zero-day,
+                ransomwares, phishing) de manière proactive.
+              </li>
+              <li style="margin-bottom: 0.6rem">
+                Renforcer les outils de sécurité modernes (EDR, XDR, NDR, SIEM,
+                UEBA) grâce à l'analyse comportementale.
+              </li>
+              <li>
+                Automatiser la réponse aux incidents et le tri des alertes au
+                sein des SOC (Security Operations Centers).
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Sources & Outils</h3>
+            <p class="text-gray" style="margin-bottom: 1rem">
+              Pour automatiser la collecte d'informations et centraliser ma
+              veille, je combine deux outils complémentaires en méthode "Push" :
             </p>
 
-            <!-- SECTION HAUT : THÉMATIQUE ET OUTILS -->
-            <div class="grid-2">
-                <div class="card">
-                    <h3>Thématique Suivie</h3>
-                    <h4 style="color: #8934d3; margin-top: 1rem; margin-bottom: 0.5rem; font-size: 1.2rem;">
-                        🤖 L'utilisation de l'IA dans la détection des cyberattaques
-                    </h4>
-                    <p class="text-light-gray" style="margin-top: 1rem;">
-                        Mon sujet d'étude porte sur la manière dont l'Intelligence Artificielle et le Machine Learning révolutionnent la cybersécurité défensive. 
-                        J'étudie comment ces technologies permettent de :
-                    </p>
-                    <ul style="margin-top: 1rem; margin-left: 1.5rem; color: #d4d4d8;">
-                        <li style="margin-bottom: 0.6rem;">Détecter les comportements anormaux (menaces Zero-day, ransomwares, phishing) de manière proactive.</li>
-                        <li style="margin-bottom: 0.6rem;">Renforcer les outils de sécurité modernes (EDR, XDR, NDR, SIEM, UEBA) grâce à l'analyse comportementale.</li>
-                        <li>Automatiser la réponse aux incidents et le tri des alertes au sein des SOC (Security Operations Centers).</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>Sources & Outils</h3>
-                    <p class="text-gray" style="margin-bottom: 1rem;">
-                        Pour automatiser la collecte d'informations et centraliser ma veille, je combine deux outils complémentaires en méthode "Push" :
-                    </p>
-                    
-                    <div class="tool-box">
-                        <h4>📡 Inoreader (Agrégateur RSS)</h4>
-                        <p class="text-light-gray" style="font-size: 0.92rem; margin: 0;">
-                            Outil principal me permettant de centraliser, classer par dossiers et lire l'ensemble de mes flux d'actualités techniques et alertes au même endroit, sans bruit publicitaire.
-                        </p>
-                    </div>
-
-                    <div class="tool-box" style="margin-bottom: 0;">
-                        <h4>🔔 Google Alerts & Google Actualités</h4>
-                        <p class="text-light-gray" style="font-size: 0.92rem; margin: 0;">
-                            Génération de flux ciblés grâce à des requêtes booléennes avancées (opérateurs OR, AND, filtrage par sites IT spécialisés) directement reliés à mon tableau de bord Inoreader.
-                        </p>
-                    </div>
-                </div>
+            <div class="tool-box">
+              <h4>📡 Inoreader (Agrégateur RSS)</h4>
+              <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
+                Outil principal me permettant de centraliser, classer par
+                dossiers et lire l'ensemble de mes flux d'actualités techniques
+                et alertes au même endroit, sans bruit publicitaire.
+              </p>
             </div>
 
-            <!-- SECTION BAS : REQUÊTES BOOLÉENNES CONFIGURÉES -->
-            <div style="margin-top: 2rem;">
-                <div class="card">
-                    <h3>Flux & Requêtes configurés dans Inoreader</h3>
-                    <p class="text-gray" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
-                        Voici les expressions de recherche exactes paramétrées pour filtrer l'actualité francophone et les rapports techniques :
-                    </p>
-
-                    <div class="grid-2">
-                        <!-- COLONNE 1 : GOOGLE ALERTS -->
-                        <div>
-                            <h4 style="color: #8934d3; font-size: 1.05rem; margin-bottom: 0.8rem;">🔔 Alertes Google Alerts</h4>
-                            <ul class="query-list">
-                                <li class="query-item">
-                                    <span class="query-badge">Menaces & Blocage</span><br>
-                                    ("intelligence artificielle" OR IA) (ransomware OR rançongiciel OR phishing OR hameçonnage OR "zero-day" OR "menace persistante avancée") (détection OR détecter OR repérer OR bloquer)
-                                </li>
-                                <li class="query-item">
-                                    <span class="query-badge">Presse IT Spécialisée</span><br>
-                                    ("intelligence artificielle" OR IA OR "machine learning") (cyberattaque OR cybersécurité) (site:lemagit.fr OR site:zdnet.fr OR site:silicon.fr OR site:lemondeinformatique.fr OR site:numerama.com)
-                                </li>
-                                <li class="query-item">
-                                    <span class="query-badge">Détection de Cybermenaces</span><br>
-                                    ("intelligence artificielle" OR IA OR "machine learning" OR "apprentissage automatique") (cyberattaque OR cyberattaques OR cybermenace OR cybermenaces) (détection OR détecter)
-                                </li>
-                                <li class="query-item">
-                                    <span class="query-badge">Outils SOC & Analyse</span><br>
-                                    ("intelligence artificielle" OR IA OR "machine learning" OR "deep learning" OR "IA générative") (SOC OR SIEM OR EDR OR XDR OR NDR OR UEBA OR "détection d'anomalies" OR "analyse comportementale")
-                                </li>
-                                <li class="query-item">
-                                    <span class="query-badge">Études & Livres blancs</span><br>
-                                    ("intelligence artificielle" OR "apprentissage automatique") cybersécurité (rapport OR étude OR "livre blanc" OR recherche) (détection OR détecter)
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- COLONNE 2 : GOOGLE ACTUALITÉS / NEWS -->
-                        <div>
-                            <h4 style="color: #8934d3; font-size: 1.05rem; margin-bottom: 0.8rem;">📰 Flux Google Actualités / News</h4>
-                            <ul class="query-list">
-                                <li class="query-item">
-                                    <span class="query-badge">Google Actualités</span><br>
-                                    "("intelligence artificielle" OR IA) (ransomware OR rançongiciel OR phishing OR hameçonnage) détection"
-                                </li>
-                                <li class="query-item">
-                                    <span class="query-badge">Google Actualités</span><br>
-                                    "("intelligence artificielle" OR "machine learning") (SOC OR SIEM OR EDR OR XDR) cybersécurité"
-                                </li>
-                                <li class="query-item">
-                                    <span class="query-badge">Google Actualités</span><br>
-                                    "("intelligence artificielle" OR IA) (cyberattaque OR cybermenace) détection"
-                                </li>
-                                <li class="query-item">
-                                    <span class="query-badge">Google News</span><br>
-                                    ""cyber" AND "IA""
-                                </li>
-                                <li class="query-item">
-                                    <span class="query-badge">Google News</span><br>
-                                    "cyberattaque intelligence artificielle"
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="tool-box" style="margin-bottom: 0">
+              <h4>🔔 Google Alerts & Google Actualités</h4>
+              <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
+                Génération de flux ciblés grâce à des requêtes booléennes
+                avancées (opérateurs OR, AND, filtrage par sites IT spécialisés)
+                directement reliés à mon tableau de bord Inoreader.
+              </p>
             </div>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="#" target="_blank" class="btn-secondary">📄 Voir ma synthèse de veille (PDF)</a>
-            </div>
+          </div>
         </div>
+
+        <div style="text-align: center; margin-top: 3rem">
+          <a href="#" target="_blank" class="btn-secondary"
+            >📄 Voir ma synthèse de veille (PDF)</a
+          >
+        </div>
+      </div>
     </main>
 
     <footer>
-        <p>© 2025 Dylan Spinelli - Tous droits réservés</p>
-        <p class="footer-small">BTS SIO SISR - Ynov Campus Nanterre</p>
+      <p>© 2025 Dylan Spinelli - Tous droits réservés</p>
+      <p class="footer-small">BTS SIO SISR - Ynov Campus Nanterre</p>
     </footer>
-</body>
+  </body>
 </html>
