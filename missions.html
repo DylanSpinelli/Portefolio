@@ -15,7 +15,11 @@
 
       /* STYLE DU BANDEAU ET DE LA VISIONNEUSE DU TABLEAU DE SYNTHÈSE */
       .synthesis-banner {
-        background: linear-gradient(135deg, rgba(137, 52, 211, 0.2), rgba(137, 52, 211, 0.05));
+        background: linear-gradient(
+          135deg,
+          rgba(137, 52, 211, 0.2),
+          rgba(137, 52, 211, 0.05)
+        );
         border: 1px solid #8934d3;
         border-radius: 12px;
         padding: 1.8rem 1.5rem;
@@ -84,7 +88,7 @@
       /* SYSTÈME D'ACCORDÉON POUR ALLÉGER LA PAGE */
       .accordion-container {
         margin-bottom: 1.5rem;
-        background-color: transparent; 
+        background-color: transparent;
         border: 1px solid #3f3f46;
         border-radius: 12px;
         padding: 0 1.5rem;
@@ -129,7 +133,7 @@
 
       /* Flèche personnalisée */
       .category-title::after {
-        content: '▼';
+        content: "▼";
         position: absolute;
         right: 0;
         font-size: 1rem;
@@ -168,8 +172,14 @@
       }
 
       @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(-10px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       @media (max-width: 768px) {
@@ -183,15 +193,16 @@
     <nav>
       <div class="nav-container">
         <div class="logo">
-          <span class="logo-white">Dylan</span><span class="logo-green"> Spinelli</span>
+          <span class="logo-white">Dylan</span
+          ><span class="logo-green"> Spinelli</span>
         </div>
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="parcours.html">École & Entreprise</a></li>
+          <li><a href="parcours.html">Entreprise</a></li>
           <li><a href="missions.html" class="active">Épreuve E5</a></li>
           <li><a href="projets.html">Épreuve E6</a></li>
           <li><a href="veille.html">Veille Technologique</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/dylanspinelli/">LinkedIn</a></li>
         </ul>
       </div>
     </nav>
@@ -204,20 +215,34 @@
         <div class="synthesis-banner">
           <div class="synthesis-text">
             <h3>Tableau de Synthèse E5</h3>
-            <p>Document officiel recensant l'ensemble de mes compétences et réalisations professionnelles.</p>
-          </div>
-          
-          <div class="pdf-viewer-container">
-            <iframe src="documents/BTS SIO 2027 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse (1).pdf" title="Tableau de Synthèse E5"></iframe>
+            <p>
+              Document officiel recensant l'ensemble de mes compétences et
+              réalisations professionnelles.
+            </p>
           </div>
 
-          <a href="documents/BTS SIO 2027 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse (1).pdf" target="_blank" class="btn-synthesis">
+          <div class="pdf-viewer-container">
+            <iframe
+              src="documents/BTS SIO 2027 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse (1).pdf"
+              title="Tableau de Synthèse E5"
+            ></iframe>
+          </div>
+
+          <a
+            href="documents/BTS SIO 2027 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse (1).pdf"
+            target="_blank"
+            class="btn-synthesis"
+          >
             🔍 Ouvrir en plein écran / Télécharger
           </a>
         </div>
 
         <h3 class="subsection-title">Projets réalisés en École</h3>
-        <p class="text-gray" style="margin-bottom: 2rem;">Retrouvez ci-dessous l'ensemble des travaux pratiques réalisés en cours, classés par domaine d'expertise SISR. Cliquez sur une catégorie pour l'ouvrir.</p>
+        <p class="text-gray" style="margin-bottom: 2rem">
+          Retrouvez ci-dessous l'ensemble des travaux pratiques réalisés en
+          cours, classés par domaine d'expertise SISR. Cliquez sur une catégorie
+          pour l'ouvrir.
+        </p>
 
         <!-- ========================================== -->
         <!-- 1. ADMIN SYSTÈME & SERVICES (U5)           -->
@@ -231,84 +256,138 @@
             <div class="card">
               <h3>Serveur Web Apache</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Installation et configuration d'un serveur web Apache sous Linux. Gestion des hôtes virtuels.
+                Installation et configuration d'un serveur web Apache sous
+                Linux. Gestion des hôtes virtuels.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - Projet Apache.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - Projet Apache.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
-              <h3>Installation OCS Inventory</h3>
+              <h3>OCS Inventory</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Déploiement d'une solution d'inventaire automatisé. Installation du serveur et déploiement des agents.
+                Déploiement d'une solution d'inventaire automatisé. Installation
+                du serveur et déploiement des agents.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - TP OCS Inventory.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - TP OCS Inventory.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>Installation GLPI</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Mise en place d'une solution ITSM. Gestion des incidents et synchronisation avec OCS.
+                Mise en place d'une solution ITSM. Gestion des incidents et
+                synchronisation avec OCS.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - TP Installation GLPI.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - TP Installation GLPI.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>Gestion des tickets (GLPI)</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Administration ciblée support utilisateur. Création, assignation et suivi des tickets d'incidents.
+                Administration ciblée support utilisateur. Création, assignation
+                et suivi des tickets d'incidents.
               </p>
               <div class="card-actions">
-                <a href="documents/Atelier U5 - Gestion des tickets avec GLPI.pdf" target="_blank" class="btn-action btn-doc">📄 Doc 1</a>
-                <a href="documents/Gestion des tickets Intermédiaire GLPI.pdf" target="_blank" class="btn-action btn-doc">📄 Doc 2</a>
+                <a
+                  href="documents/Atelier U5 - Gestion des tickets avec GLPI.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Doc 1</a
+                >
+                <a
+                  href="documents/Gestion des tickets Intermédiaire GLPI.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Doc 2</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>Administration Linux</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Gestion des utilisateurs, gestion des permissions, arborescence et administration des services sous environnement GNU/Linux.
+                Gestion des utilisateurs, gestion des permissions, arborescence
+                et administration des services sous environnement GNU/Linux.
               </p>
-              <div class="card-actions">                
-                <a href="documents/TP Linux.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+              <div class="card-actions">
+                <a
+                  href="documents/TP Linux.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>TP MySQL</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Création, administration et requêtage de bases de données relationnelles en ligne de commande. Gestion des privilèges utilisateurs.
+                Création, administration et requêtage de bases de données
+                relationnelles en ligne de commande. Gestion des privilèges
+                utilisateurs.
               </p>
               <div class="card-actions">
-                <a href="documents/TP_MySQL Spinelli Dylan.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/TP_MySQL Spinelli Dylan.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>TP PHP</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Développement de scripts côté serveur, traitement de données dynamiques et connexion à une base de données MySQL.
+                Développement de scripts côté serveur, traitement de données
+                dynamiques et connexion à une base de données MySQL.
               </p>
               <div class="card-actions">
-                <a href="documents/TP_PHP_Fondamentaux SPINELLI Dylan.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/TP_PHP_Fondamentaux SPINELLI Dylan.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>Projet Stadium Company</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Installation et configuration d'un contrôleur de domaine. Gestion des utilisateurs, groupes, unités d'organisation (OU) et stratégies de groupe (GPO).
+                Installation et configuration d'un contrôleur de domaine.
+                Gestion des utilisateurs, groupes, unités d'organisation (OU) et
+                stratégies de groupe (GPO).
               </p>
               <div class="card-actions">
-                <a href="documents/Projet AD Stadium Company.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Projet AD Stadium Company.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
-
           </div>
         </details>
 
@@ -324,113 +403,178 @@
             <div class="card">
               <h3>TP VLSM & Subnetting</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Mise en pratique de la méthode d'adressage VLSM (Variable Length Subnet Mask) pour optimiser un plan d'adressage réseau.
+                Mise en pratique de la méthode d'adressage VLSM (Variable Length
+                Subnet Mask) pour optimiser un plan d'adressage réseau.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - TP VLSM Lab1 Subnetting.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - TP VLSM Lab1 Subnetting.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>DHCP</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Configuration d'un service DHCP sur routeurs Cisco (IOS). Gestion des pools d'adresses, exclusions, routage statique.
+                Configuration d'un service DHCP sur routeurs Cisco (IOS).
+                Gestion des pools d'adresses, exclusions, routage statique.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - Atelier 1 DHCP.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - Atelier 1 DHCP.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>TP Spanning Tree Protocol (STP)</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Étude et configuration du protocole STP pour prévenir les boucles réseau de niveau 2.
+                Étude et configuration du protocole STP pour prévenir les
+                boucles réseau de niveau 2.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - TP STP.pdf" target="_blank" class="btn-action btn-doc" style="flex-basis: 100%">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - TP STP.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  style="flex-basis: 100%"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>TP VLAN & Trunks</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Segmentation du réseau local à l'aide de VLANs pour améliorer la sécurité et la performance.
+                Segmentation du réseau local à l'aide de VLANs pour améliorer la
+                sécurité et la performance.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - TP VLAN.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - TP VLAN.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>TP Routage Statique</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Configuration manuelle des tables de routage sur routeurs Cisco pour interconnecter différents réseaux locaux.
+                Configuration manuelle des tables de routage sur routeurs Cisco
+                pour interconnecter différents réseaux locaux.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - TP Routage Statique.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - TP Routage Statique.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>Atelier Multi Sites</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Mise en place d'une infrastructure Multi Sites sur équipements Cisco.
+                Mise en place d'une infrastructure Multi Sites sur équipements
+                Cisco.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - Atelier infrastructure multi sites.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - Atelier infrastructure multi sites.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>TP ARP</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Analyse du protocole ARP. Observation des requêtes et réponses pour la résolution d'adresses MAC.
+                Analyse du protocole ARP. Observation des requêtes et réponses
+                pour la résolution d'adresses MAC.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - TP ARP.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - TP ARP.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>TP HTTP & DNS</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Étude des protocoles de la couche application. Analyse des échanges HTTP et résolution de noms de domaine.
+                Étude des protocoles de la couche application. Analyse des
+                échanges HTTP et résolution de noms de domaine.
               </p>
               <div class="card-actions">
-                <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a href="#" target="_blank" class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>TP Wireshark (TCP, HTTP, SSH)</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Analyse de trames réseaux avec Wireshark. Captures et étude détaillée des échanges.
+                Analyse de trames réseaux avec Wireshark. Captures et étude
+                détaillée des échanges.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - TP Wireshark.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - TP Wireshark.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>TP NAT & PAT</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Configuration de la translation d'adresses (NAT statique/dynamique et surcharge PAT) sur routeurs Cisco pour l'accès à Internet.
+                Configuration de la translation d'adresses (NAT
+                statique/dynamique et surcharge PAT) sur routeurs Cisco pour
+                l'accès à Internet.
               </p>
               <div class="card-actions">
-                <a href="documents/TP NAT.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/TP NAT.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>TP Etherchannel</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Configuration de l'agrégation de liens (Etherchannel) avec les protocoles LACP/PAgP sur des commutateurs Cisco pour augmenter la bande passante et assurer la redondance.
+                Configuration de l'agrégation de liens (Etherchannel) avec les
+                protocoles LACP/PAgP sur des commutateurs Cisco pour augmenter
+                la bande passante et assurer la redondance.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - TP Etherchannel.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - TP Etherchannel.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
-
           </div>
         </details>
 
@@ -446,46 +590,68 @@
             <div class="card">
               <h3>LAB 1 Cyber : Checksum</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Vérification de l'intégrité d'une ressource avec la méthode de la somme de contrôle.
+                Vérification de l'intégrité d'une ressource avec la méthode de
+                la somme de contrôle.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - LAB1 U7.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - LAB1 U7.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>LAB 2 Cyber : ARP Spoofing</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Empoisonnement du Cache ARP avec arpspoof, analyse du trafic HTTP/HTTPS. Chiffrement des connexions
+                Empoisonnement du Cache ARP avec arpspoof, analyse du trafic
+                HTTP/HTTPS. Chiffrement des connexions
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - LAB 2 Cyber.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - LAB 2 Cyber.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>Atelier DVWA Force Brute</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Réalisation d'un scénario de Force Brute avec Burp Suite sur Kali Linux.
+                Réalisation d'un scénario de Force Brute avec Burp Suite sur
+                Kali Linux.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - Atelier Cyber DVWA Force Brute.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - Atelier Cyber DVWA Force Brute.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>LAB Cryptographie (OpenSSL)</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Génération de paires de clés pour le chiffrement asymétrique et manipulation de signatures numériques avec l'outil OpenSSL.
+                Génération de paires de clés pour le chiffrement asymétrique et
+                manipulation de signatures numériques avec l'outil OpenSSL.
               </p>
               <div class="card-actions">
-                <a href="documents/Portefolio - LAB Cryptographie.pdf" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a
+                  href="documents/Portefolio - LAB Cryptographie.pdf"
+                  target="_blank"
+                  class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
-
           </div>
         </details>
-
 
         <div style="margin-top: 4rem"></div>
 
@@ -502,50 +668,65 @@
             <div class="card">
               <h3>Projet ServiceNow</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Participation à l'administration de l'outil ITSM ServiceNow. Gestion des catalogues de services et workflows.
+                Participation à l'administration de l'outil ITSM ServiceNow.
+                Gestion des catalogues de services et workflows.
               </p>
               <div class="card-actions">
-                <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a href="#" target="_blank" class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>Procédure P1</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Rédaction et mise en œuvre de la procédure de gestion des incidents majeurs (P1).
+                Rédaction et mise en œuvre de la procédure de gestion des
+                incidents majeurs (P1).
               </p>
               <div class="card-actions">
-                <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a href="#" target="_blank" class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>Projet PMAD avec Bomgar</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Déploiement et utilisation de la solution Bomgar pour la Prise en Main À Distance sécurisée.
+                Déploiement et utilisation de la solution Bomgar pour la Prise
+                en Main À Distance sécurisée.
               </p>
               <div class="card-actions">
-                <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a href="#" target="_blank" class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>Administration Active Directory</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Gestion quotidienne de l'annuaire AD : création de comptes et application des GPO.
+                Gestion quotidienne de l'annuaire AD : création de comptes et
+                application des GPO.
               </p>
               <div class="card-actions">
-                <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a href="#" target="_blank" class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
 
             <div class="card">
               <h3>Supervision Centreon</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Mise en place de la supervision Centreon. Surveillance serveurs et réseaux (Ping, SNMP).
+                Mise en place de la supervision Centreon. Surveillance serveurs
+                et réseaux (Ping, SNMP).
               </p>
               <div class="card-actions">
-                <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a href="#" target="_blank" class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
           </div>
@@ -566,24 +747,29 @@
             <div class="card">
               <h3>Home Lab Virtualisé</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Serveur Proxmox personnel pour héberger divers services (Pi-hole, Plex, Nextcloud) via Docker et LXC.
+                Serveur Proxmox personnel pour héberger divers services
+                (Pi-hole, Plex, Nextcloud) via Docker et LXC.
               </p>
               <div class="card-actions">
-                <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a href="#" target="_blank" class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
             <div class="card">
               <h3>Hébergement Serveur de Jeux</h3>
               <p class="text-light-gray" style="flex-grow: 1">
-                Installation et sécurisation d'un serveur VPS Linux pour héberger des serveurs de jeux.
+                Installation et sécurisation d'un serveur VPS Linux pour
+                héberger des serveurs de jeux.
               </p>
               <div class="card-actions">
-                <a href="#" target="_blank" class="btn-action btn-doc">📄 Documentation</a>
+                <a href="#" target="_blank" class="btn-action btn-doc"
+                  >📄 Documentation</a
+                >
               </div>
             </div>
           </div>
         </details>
-
       </div>
     </main>
 

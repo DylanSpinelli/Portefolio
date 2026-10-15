@@ -1,109 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>École & Entreprise - Dylan Spinelli</title>
+    <title>Entreprise - Dylan Spinelli</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        /* 1. CONFIGURATION LARGEUR PAGE */
-        .timeline-layout {
-            max-width: 1200px; 
-            margin: 0 auto;
-        }
+      /* 1. CONFIGURATION LARGEUR PAGE */
+      .timeline-layout {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
 
-        .exp-logo-container {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        
-        .dsi-presentation {
-            margin: 2rem 0;
-        }
+      .exp-logo-container {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
 
-        .dsi-image-container {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
+      .dsi-presentation {
+        margin: 2rem 0;
+      }
 
-        /* Images DSI et CODIR */
-        .dsi-img-top {
-            max-width: 100%; 
-            width: 100%; 
-            max-width: 800px; 
-            height: auto; 
-            background-color: white; 
-            padding: 1rem; 
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            display: block;
-            margin: 0 auto;
-        }
+      .dsi-image-container {
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
 
-        /* 2. GRILLE ÉQUIPES */
-        .teams-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr; 
-            gap: 3rem; 
-            margin: 3rem auto; 
-            width: 100%;
-        }
+      /* Images DSI, CODIR et Service Desk (taille uniforme) */
+      .dsi-img-top {
+        max-width: 100%;
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        display: block;
+        margin: 0 auto;
+      }
 
-        @media (max-width: 900px) {
-            .teams-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+      .team-caption {
+        color: #d4d4d8;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
 
-        .team-item {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-        
-        /* 3. IMAGES REMPLISSAGE */
-        .team-img {
-            width: 100%; 
-            height: auto;
-            object-fit: contain; 
-            background-color: white;
-            padding: 0.5rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            display: block;
-        }
+      .values-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
 
-        .team-img.limit-height {
-            max-height: 400px; 
-            width: auto; 
-            max-width: 100%;
-            margin: 0 auto;
-        }
-        
-        .team-caption {
-            color: #d4d4d8;
-            margin-top: 1rem;
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-        
-        .values-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .value-tag {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            color: #fff;
-            border: 1px solid #3f3f46;
-        }
+      .value-tag {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        color: #fff;
+        border: 1px solid #3f3f46;
+      }
     </style>
   </head>
   <body>
@@ -114,144 +73,167 @@
         </div>
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="parcours.html" class="active">École & Entreprise</a></li>
+          <li><a href="parcours.html" class="active">Entreprise</a></li>
           <li><a href="missions.html">Épreuve E5</a></li>
           <li><a href="projets.html">Épreuve E6</a></li>
           <li><a href="veille.html">Veille Technologique</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/dylanspinelli/">LinkedIn</a>
+          </li>
         </ul>
       </div>
     </nav>
 
     <main>
       <div class="container">
-        <h2>École & Entreprise</h2>
-        
+        <h2>Entreprise</h2>
+
         <div class="timeline-layout">
-          
           <div class="experience-block">
             <div class="exp-logo-container">
-                <img 
-                    src="images/aag.png" 
-                    alt="Logo Alliance Automotive Group" 
-                    style="max-width: 500px; width: 100%; height: auto; background-color: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
-                >
+              <img
+                src="images/aag.png"
+                alt="Logo Alliance Automotive Group"
+                style="
+                  max-width: 500px;
+                  width: 100%;
+                  height: auto;
+                  background-color: white;
+                  padding: 1.5rem;
+                  border-radius: 12px;
+                  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                "
+              />
             </div>
 
             <h3>Alliance Automotive Group</h3>
             <span class="role">Technicien Service Desk - Alternance</span>
-            
+
             <p>
-              <strong>Alliance Automotive Group (AAG)</strong> est un acteur majeur de la distribution indépendante de pièces et de fournitures pour le marché de la réparation automobile et poids lourd en Europe. Filiale du géant américain <strong>Genuine Parts Company (GPC)</strong>, le groupe réalise un chiffre d'affaires mondial de plus de 20 milliards d'euros.
+              <strong>Alliance Automotive Group (AAG)</strong> est un acteur
+              majeur de la distribution indépendante de pièces et de fournitures
+              pour le marché de la réparation automobile et poids lourd en
+              Europe. Filiale du géant américain
+              <strong>Genuine Parts Company (GPC)</strong>, le groupe réalise un
+              chiffre d'affaires mondial de plus de 20 milliards d'euros.
             </p>
-            
-            <p style="margin-top: 1rem;">
-                En <strong>France</strong>, AAG représente une force de frappe logistique et commerciale majeure :
+
+            <p style="margin-top: 1rem">
+              En <strong>France</strong>, AAG représente une force de frappe
+              logistique et commerciale majeure :
             </p>
-            <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; color: #d4d4d8;">
-                <li><strong>1,2 Milliard d'€</strong> de chiffre d'affaires annuel.</li>
-                <li><strong>4 500</strong> collaborateurs.</li>
-                <li><strong>16</strong> plateformes de distribution.</li>
-                <li><strong>1 000</strong> points de vente (dont 250 filiales).</li>
+            <ul
+              style="
+                list-style-type: disc;
+                padding-left: 1.5rem;
+                margin-bottom: 1.5rem;
+                color: #d4d4d8;
+              "
+            >
+              <li>
+                <strong>1,2 Milliard d'€</strong> de chiffre d'affaires annuel.
+              </li>
+              <li><strong>4 500</strong> collaborateurs.</li>
+              <li><strong>16</strong> plateformes de distribution.</li>
+              <li>
+                <strong>1 000</strong> points de vente (dont 250 filiales).
+              </li>
             </ul>
 
             <p>
-                Notre mission, <strong>"WE CARE FOR REPAIR"</strong>, est de faciliter la réparation automobile et poids lourds partout en France. L'entreprise s'appuie sur 5 valeurs fondamentales :
+              Notre mission, <strong>"WE CARE FOR REPAIR"</strong>, est de
+              faciliter la réparation automobile et poids lourds partout en
+              France. L'entreprise s'appuie sur 5 valeurs fondamentales :
             </p>
             <div class="values-list">
-                <span class="value-tag">🤝 Esprit d'Équipe</span>
-                <span class="value-tag">🛡️ Responsabilité</span>
-                <span class="value-tag">🚀 Performance</span>
-                <span class="value-tag">💡 Pragmatisme</span>
-                <span class="value-tag">⚖️ Intégrité</span>
+              <span class="value-tag">🤝 Esprit d'Équipe</span>
+              <span class="value-tag">🛡️ Responsabilité</span>
+              <span class="value-tag">🚀 Performance</span>
+              <span class="value-tag">💡 Pragmatisme</span>
+              <span class="value-tag">⚖️ Intégrité</span>
             </div>
 
             <h4>Organisation de la DSI</h4>
             <div class="dsi-presentation">
-                <p>
-                    La Direction des Systèmes d'Information (IT For Business) est structurée pour soutenir la performance et la transformation digitale du groupe.
+              <p>
+                La Direction des Systèmes d'Information (IT For Business) est
+                structurée pour soutenir la performance et la transformation
+                digitale du groupe.
+              </p>
+
+              <!-- Image 1 : DSI -->
+              <div class="dsi-image-container">
+                <img
+                  src="images/dsi.png"
+                  alt="Schéma Organisation DSI"
+                  class="dsi-img-top"
+                />
+                <p class="team-caption">Vue d'ensemble IT For Business</p>
+              </div>
+
+              <!-- Image 2 : CODIR -->
+              <div class="dsi-image-container">
+                <img
+                  src="images/managers_dsi.png"
+                  alt="Codir DSI"
+                  class="dsi-img-top"
+                />
+                <p class="team-caption">Le Comité de Direction IT (CODIR)</p>
+              </div>
+
+              <!-- Image 3 : Service Desk (Centré et même taille) -->
+              <div class="dsi-image-container">
+                <img
+                  src="images/desk.png"
+                  alt="Equipe Service Desk"
+                  class="dsi-img-top"
+                  style="border: 2px solid #8934d3"
+                />
+                <p class="team-caption" style="color: #8934d3">
+                  Support Service Desk (Mon Équipe)
                 </p>
-                
-                <div class="dsi-image-container">
-                    <img src="images/dsi.png" alt="Schéma Organisation DSI" class="dsi-img-top">
-                    <p class="team-caption">Vue d'ensemble IT For Business</p>
-                </div>
-
-                <div class="dsi-image-container">
-                    <img src="images/managers_dsi.png" alt="Codir DSI" class="dsi-img-top">
-                    <p class="team-caption">Le Comité de Direction IT (CODIR)</p>
-                </div>
-
-                <p>Les opérations IT sont divisées en plusieurs pôles d'expertise :</p>
-                
-                <div class="teams-grid">
-                    
-                    <div class="team-item">
-                        <img src="images/desk.png" alt="Equipe Service Desk" class="team-img" style="border: 2px solid #8934d3;">
-                        <p class="team-caption" style="color: #8934d3;">Support Service Desk (Mon Équipe)</p>
-                    </div>
-
-                    <div class="team-item">
-                        <img src="images/proxy.png" alt="Equipe Proximité" class="team-img">
-                        <p class="team-caption">Support Proximité (Régions)</p>
-                    </div>
-
-                    <div class="team-item">
-                        <img src="images/infra.png" alt="Equipe Infrastructure" class="team-img">
-                        <p class="team-caption">Infrastructure & Cloud</p>
-                    </div>
-                    
-                    <div class="team-item">
-                        <img src="images/supply_chain.png" alt="Equipe Achats IT" class="team-img limit-height">
-                        <p class="team-caption">Achats & Équipements IT</p>
-                    </div>
-
-                </div>
+              </div>
             </div>
 
             <h4>Mes Missions Principales</h4>
-            <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
-                <li><strong>Support Utilisateur :</strong> Gestion des incidents (Niveau 1) et des demandes de service via l'outil de ticketing. Assistance à distance.</li>
-                <li><strong>Administration Système :</strong> Gestion quotidienne de l'Active Directory (création de comptes, groupes de sécurité) et administration Office 365.</li>
-                <li><strong>Gestion des Incidents Majeurs (P1) :</strong> Application de la procédure d'urgence pour garantir la continuité de service et le respect des <strong>SLA</strong>.</li>
-                <li><strong>Amélioration Continue (ITIL) :</strong> Rédaction de procédures techniques, gestion de la base de connaissances et optimisation des processus de support.</li>
+            <ul
+              style="
+                list-style-type: disc;
+                padding-left: 1.5rem;
+                margin-bottom: 1.5rem;
+              "
+            >
+              <li>
+                <strong>Support Utilisateur :</strong> Gestion des incidents
+                (Niveau 1) et des demandes de service via l'outil de ticketing.
+                Assistance à distance.
+              </li>
+              <li>
+                <strong>Administration Système :</strong> Gestion quotidienne de
+                l'Active Directory (création de comptes, groupes de sécurité) et
+                administration Office 365.
+              </li>
+              <li>
+                <strong>Gestion des Incidents Majeurs (P1) :</strong>
+                Application de la procédure d'urgence pour garantir la
+                continuité de service et le respect des <strong>SLA</strong>.
+              </li>
+              <li>
+                <strong>Amélioration Continue (ITIL) :</strong> Rédaction de
+                procédures techniques, gestion de la base de connaissances et
+                optimisation des processus de support.
+              </li>
             </ul>
 
             <h4>Environnement Technique</h4>
             <div class="tags">
-                <span class="tag">ServiceNow</span>
-                <span class="tag">Active Directory</span>
-                <span class="tag">Office 365</span>
-                <span class="tag">Centreon</span>
-                <span class="tag">Bomgar</span>
+              <span class="tag">ServiceNow</span>
+              <span class="tag">Active Directory</span>
+              <span class="tag">Office 365</span>
+              <span class="tag">Centreon</span>
+              <span class="tag">Bomgar</span>
             </div>
           </div>
-
-          <div class="experience-block">
-            <div class="exp-logo-container">
-                <img 
-                    src="images/ecole.png" 
-                    alt="Logo Paris Ynov Campus" 
-                    style="max-width: 250px; width: 100%; height: auto; background-color: white; padding: 1rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
-                >
-            </div>
-
-            <h3>Paris Ynov Campus</h3>
-            <span class="role">BTS Services Informatiques aux Organisations</span>
-            
-            <p style="font-weight: bold; margin-bottom: 1rem; color: white;">
-              Paris Ynov Campus, l’école digitale dédiée aux métiers de demain.
-            </p>
-            
-            <p>
-              Paris Ynov Campus est une institution dédiée à la formation dans les domaines du numérique et de l'innovation. Fondé pour répondre à la demande croissante de compétences spécialisées, le campus offre des programmes allant du Bachelor au Mastère dans des secteurs variés tels que l'informatique, le digital marketing, et la création 3D.
-            </p>
-            
-            <p>
-              Le campus se distingue par son approche pratique, encourageant les projets réels et les collaborations avec les entreprises pour préparer les étudiants à des carrières réussies. Reconnu pour son engagement envers l'innovation et l'excellence éducative, Paris Ynov Campus continue d'évoluer, intégrant les dernières technologies pour former les leaders de demain dans l'industrie numérique.
-            </p>
-          </div>
-
         </div>
       </div>
     </main>
