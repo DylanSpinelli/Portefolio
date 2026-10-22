@@ -59,7 +59,8 @@
     <nav>
       <div class="nav-container">
         <div class="logo">
-          <span class="logo-white">Dylan</span><span class="logo-green"> Spinelli</span>
+          <span class="logo-white">Dylan</span
+          ><span class="logo-green"> Spinelli</span>
         </div>
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
@@ -78,70 +79,373 @@
       <div class="container">
         <h2>Veille <span class="highlight">Technologique</span></h2>
 
-        <p class="text-gray" style="margin-bottom: 2rem; text-align: center">
-          La veille technologique est essentielle pour un administrateur
-          systèmes et réseaux afin d'anticiper les nouvelles menaces et
-          d'adapter les infrastructures.
-        </p>
+        <!-- 1. INTRODUCTION -->
+        <div class="card" style="margin-bottom: 2rem">
+          <h3>Introduction</h3>
+          <p class="text-light-gray" style="margin-top: 1rem">
+            La veille technologique consiste à surveiller de façon régulière et
+            organisée les évolutions d'un domaine (technologies, menaces, bonnes
+            pratiques) afin de s'informer, d'anticiper et d'adapter ses choix.
+            Pour un administrateur systèmes et réseaux, elle est essentielle
+            pour anticiper les nouvelles menaces et faire évoluer les
+            infrastructures.
+          </p>
+          <p class="text-light-gray" style="margin-top: 1rem">
+            J'ai choisi de suivre
+            <strong
+              >l'intelligence artificielle appliquée à la cybersécurité</strong
+            >, un domaine qui évolue très vite et qui touche directement mon
+            métier. Ma veille s'organise autour de deux sujets complémentaires :
+          </p>
+          <ul style="margin-top: 1rem; margin-left: 1.5rem; color: #d4d4d8">
+            <li style="margin-bottom: 0.6rem">
+              <strong>Sujet 1 :</strong> comment les attaquants utilisent l'IA
+              pour mener leurs cyberattaques.
+            </li>
+            <li style="margin-bottom: 0.6rem">
+              <strong>Sujet 2 :</strong> comment les défenseurs utilisent l'IA
+              pour détecter les attaques et y répondre.
+            </li>
+          </ul>
+        </div>
 
-        <!-- SECTION HAUT : THÉMATIQUE ET OUTILS -->
-        <div class="grid-2">
-          <div class="card">
-            <h3>Thématique Suivie</h3>
-            <h4
-              style="
-                color: #8934d3;
-                margin-top: 1rem;
-                margin-bottom: 0.5rem;
-                font-size: 1.2rem;
-              "
-            >
-              🤖 L'Intelligence Artificielle : Offensive & Défensive en Cybersécurité
-            </h4>
-            <p class="text-light-gray" style="margin-top: 1rem">
-              Mon sujet d'étude analyse l'impact global de l'Intelligence Artificielle et du Machine Learning dans la cybersécurité, couvrant à la fois les aspects défensifs et offensifs :
+        <!-- 2. OUTILS UTILISÉS -->
+        <div class="card" style="margin-bottom: 2rem">
+          <h3>Outils utilisés</h3>
+          <p class="text-gray" style="margin-bottom: 1rem">
+            Pour automatiser la collecte d'informations et centraliser ma
+            veille, je combine deux outils complémentaires en méthode "Push" :
+          </p>
+
+          <div class="tool-box">
+            <h4>📡 Inoreader (Agrégateur RSS)</h4>
+            <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
+              Outil principal me permettant de centraliser, classer par dossiers
+              et lire l'ensemble de mes flux d'actualités techniques et alertes
+              au même endroit, sans bruit publicitaire.
             </p>
-            <ul style="margin-top: 1rem; margin-left: 1.5rem; color: #d4d4d8">
-              <li style="margin-bottom: 0.6rem">
-                <strong>Côté Défensif :</strong> Détection proactive des comportements anormaux, automatisation de la réponse aux incidents au sein des SOC et renforcement des outils de sécurité (SIEM, EDR, XDR).
-              </li>
-              <li style="margin-bottom: 0.6rem">
-                <strong>Côté Offensif :</strong> Utilisation de l'IA par les cybercriminels pour générer des campagnes de phishing ultrasophistiquées, automatiser l'exploitation de failles (Zero-day) ou concevoir des malwares adaptatifs.
-              </li>
-            </ul>
           </div>
 
-          <div class="card">
-            <h3>Sources & Outils</h3>
-            <p class="text-gray" style="margin-bottom: 1rem">
-              Pour automatiser la collecte d'informations et centraliser ma
-              veille, je combine deux outils complémentaires en méthode "Push" :
+          <div class="tool-box" style="margin-bottom: 0">
+            <h4>🔔 Google Alerts & Google Actualités</h4>
+            <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
+              Génération de flux ciblés grâce à des requêtes booléennes avancées
+              (opérateurs OR, AND, filtrage par sites IT spécialisés)
+              directement reliés à mon tableau de bord Inoreader.
             </p>
-
-            <div class="tool-box">
-              <h4>📡 Inoreader (Agrégateur RSS)</h4>
-              <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
-                Outil principal me permettant de centraliser, classer par
-                dossiers et lire l'ensemble de mes flux d'actualités techniques
-                et alertes au même endroit, sans bruit publicitaire.
-              </p>
-            </div>
-
-            <div class="tool-box" style="margin-bottom: 0">
-              <h4>🔔 Google Alerts & Google Actualités</h4>
-              <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
-                Génération de flux ciblés grâce à des requêtes booléennes
-                avancées (opérateurs OR, AND, filtrage par sites IT spécialisés)
-                directement reliés à mon tableau de bord Inoreader.
-              </p>
-            </div>
           </div>
         </div>
 
-        <div style="text-align: center; margin-top: 3rem">
-          <a href="#" target="_blank" class="btn-secondary"
-            >📄 Voir ma synthèse de veille (PDF)</a
+        <!-- 3. SUJET 1 -->
+        <div class="card" style="margin-bottom: 2rem">
+          <h3>
+            Sujet 1 : Quand l'IA devient une arme pour les cyberattaquants
+          </h3>
+          <p class="text-light-gray" style="margin-top: 1rem">
+            Les attaquants s'appuient déjà sur l'IA générative à plusieurs
+            étapes d'une attaque. Mon objectif est de distinguer ce qui est
+            réellement observé de ce qui relève encore de l'effet d'annonce.
+          </p>
+          <ul style="margin-top: 1rem; margin-left: 1.5rem; color: #d4d4d8">
+            <li style="margin-bottom: 0.6rem">
+              <strong>Phishing et ingénierie sociale :</strong> l'IA aide à
+              profiler les victimes et à rédiger des messages plus crédibles,
+              plus vite et à plus grande échelle.
+            </li>
+            <li style="margin-bottom: 0.6rem">
+              <strong>Malwares adaptatifs :</strong> Google a identifié des
+              codes malveillants qui font appel à un modèle d'IA pendant
+              l'attaque pour réécrire leur propre code ou générer des commandes,
+              ce qui complique la détection par signatures.
+            </li>
+            <li style="margin-bottom: 0.6rem">
+              <strong>Une menace à relativiser :</strong> selon l'ANSSI, aucun
+              système d'IA ne sait encore mener seul toutes les étapes d'une
+              attaque, et la découverte de vulnérabilités reste dépendante de
+              compétences humaines. L'IA amplifie surtout les capacités des
+              attaquants.
+            </li>
+            <li style="margin-bottom: 0.6rem">
+              <strong>Les modèles d'IA, nouvelles cibles :</strong>
+              empoisonnement des données d'entraînement, compromission de la
+              chaîne logicielle, exfiltration de données.
+            </li>
+          </ul>
+
+          <h4
+            style="
+              color: #8934d3;
+              margin-top: 1.5rem;
+              margin-bottom: 0.8rem;
+              font-size: 1.1rem;
+            "
           >
+            📰 Articles consultés
+          </h4>
+
+          <div class="tool-box">
+            <h4>
+              <a
+                href="https://cyber.gouv.fr/actualites/synthese-de-la-menace-sur-lia-generative-face-aux-attaques-informatiques/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: inherit; text-decoration: underline"
+                >Synthèse de la menace sur l'IA générative face aux attaques
+                informatiques</a
+              >
+            </h4>
+            <p
+              class="text-gray"
+              style="font-size: 0.85rem; margin: 0 0 0.5rem 0"
+            >
+              ANSSI (cyber.gouv.fr) · 4 février 2026
+            </p>
+            <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
+              Premier état des lieux de l'ANSSI sur l'usage de l'IA générative
+              par les attaquants : profilage des victimes, contenus d'ingénierie
+              sociale et développement de programmes malveillants. Les acteurs
+              avancés y gagnent en efficacité, les moins expérimentés s'en
+              servent surtout pour apprendre. La maturité de la menace reste
+              limitée et doit être réévaluée régulièrement.
+            </p>
+          </div>
+
+          <div class="tool-box">
+            <h4>
+              <a
+                href="https://www.cybersecuritydive.com/news/ai-powered-malware-google/804760/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: inherit; text-decoration: underline"
+                >AI-based malware makes attacks stealthier and more adaptive</a
+              >
+            </h4>
+            <p
+              class="text-gray"
+              style="font-size: 0.85rem; margin: 0 0 0.5rem 0"
+            >
+              Cybersecurity Dive · 5 novembre 2025 · en anglais
+            </p>
+            <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
+              Google a identifié cinq nouvelles familles de malwares qui
+              exploitent l'IA. PROMPTFLUX utilise Gemini pour réécrire son
+              propre code, et PROMPTSTEAL interroge un modèle hébergé sur
+              Hugging Face pour générer des commandes de vol de données ; ce
+              dernier a été rattaché au groupe russe APT28. Conséquence : les
+              détections basées sur les signatures seront moins efficaces.
+            </p>
+          </div>
+
+          <div class="tool-box">
+            <h4>
+              <a
+                href="https://www.lemondeinformatique.fr/actualites/lire-l-anssi-livre-son-bilan-de-la-menace-ia-en-2025-99262.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: inherit; text-decoration: underline"
+                >L'ANSSI livre son bilan de la menace IA en 2025</a
+              >
+            </h4>
+            <p
+              class="text-gray"
+              style="font-size: 0.85rem; margin: 0 0 0.5rem 0"
+            >
+              Le Monde Informatique · 4 février 2026
+            </p>
+            <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
+              Compte rendu du rapport de l'ANSSI : aucune attaque contre des
+              acteurs français menée grâce à l'IA n'est recensée à ce jour, mais
+              l'IA est déjà utilisée pour le hameçonnage, la reconnaissance, le
+              développement de malwares et le tri des données volées. Les
+              modèles eux-mêmes peuvent devenir des cibles.
+            </p>
+          </div>
+
+          <div class="tool-box" style="margin-bottom: 0">
+            <h4>
+              <a
+                href="https://next.ink/223395/cybersecurite-vs-gen-ai-lanssi-na-pas-de-preuve-dattaque-a-100-ia/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: inherit; text-decoration: underline"
+                >Cybersécurité vs Gen AI : l'ANSSI « n'a pas de preuve d'attaque
+                à 100 % IA »</a
+              >
+            </h4>
+            <p
+              class="text-gray"
+              style="font-size: 0.85rem; margin: 0 0 0.5rem 0"
+            >
+              Next · 9 février 2026
+            </p>
+            <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
+              Analyse de la note de l'ANSSI : l'IA générative peut aider les
+              pirates, notamment pour produire du code, mais aucune attaque
+              menée de bout en bout par une IA n'est connue contre des acteurs
+              français. Les compétences humaines restent indispensables en amont
+              des attaques.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. SUJET 2 -->
+        <div class="card" style="margin-bottom: 2rem">
+          <h3>
+            Sujet 2 : L'IA comme bouclier pour détecter et répondre aux
+            cyberattaques
+          </h3>
+          <p class="text-light-gray" style="margin-top: 1rem">
+            Face au volume croissant d'alertes, l'IA et le machine learning
+            aident les équipes de sécurité à repérer des comportements anormaux
+            et à gagner du temps dans l'analyse.
+          </p>
+          <ul style="margin-top: 1rem; margin-left: 1.5rem; color: #d4d4d8">
+            <li style="margin-bottom: 0.6rem">
+              <strong>Détection comportementale :</strong> une signature ne
+              reconnaît que ce qu'elle connaît déjà, alors que le machine
+              learning repère les écarts par rapport au comportement habituel
+              (utilisateurs, machines, réseau). C'est utile face aux malwares
+              qui changent de code.
+            </li>
+            <li style="margin-bottom: 0.6rem">
+              <strong>Tri des alertes :</strong> les SOC reçoivent beaucoup
+              d'alertes ; l'IA aide à écarter les faux positifs, à les prioriser
+              et à reconstituer le déroulement d'une attaque.
+            </li>
+            <li style="margin-bottom: 0.6rem">
+              <strong>Recherche proactive de failles :</strong> l'agent Big
+              Sleep de Google a découvert des vulnérabilités réelles, et a
+              permis de bloquer l'exploitation d'une faille avant qu'elle n'ait
+              lieu.
+            </li>
+            <li style="margin-bottom: 0.6rem">
+              <strong>Un assistant, pas un remplaçant :</strong> l'analyste
+              garde la décision finale, et il faut garder un regard critique sur
+              les sources, notamment celles des éditeurs de solutions.
+            </li>
+          </ul>
+
+          <h4
+            style="
+              color: #8934d3;
+              margin-top: 1.5rem;
+              margin-bottom: 0.8rem;
+              font-size: 1.1rem;
+            "
+          >
+            📰 Articles consultés
+          </h4>
+
+          <div class="tool-box">
+            <h4>
+              <a
+                href="https://blog.google/technology/safety-security/cybersecurity-updates-summer-2025/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: inherit; text-decoration: underline"
+                >A summer of security: empowering cyber defenders with AI</a
+              >
+            </h4>
+            <p
+              class="text-gray"
+              style="font-size: 0.85rem; margin: 0 0 0.5rem 0"
+            >
+              Google (blog officiel) · 15 juillet 2025 · en anglais
+            </p>
+            <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
+              Google présente Big Sleep, son agent IA qui a trouvé plusieurs
+              failles réelles et qui, selon l'entreprise, a permis pour la
+              première fois d'empêcher une exploitation avant qu'elle ne se
+              produise (faille SQLite). L'article évoque aussi des outils
+              d'investigation assistés par IA et FACADE, un système de détection
+              des menaces internes utilisé chez Google.
+            </p>
+          </div>
+
+          <div class="tool-box">
+            <h4>
+              <a
+                href="https://www.solutions-numeriques.com/?p=236337"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: inherit; text-decoration: underline"
+                >Security Copilot : Microsoft met l'IA au coeur de la
+                cybersécurité</a
+              >
+            </h4>
+            <p
+              class="text-gray"
+              style="font-size: 0.85rem; margin: 0 0 0.5rem 0"
+            >
+              Solutions Numériques · 26 mars 2025
+            </p>
+            <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
+              Microsoft ajoute à Security Copilot des agents IA spécialisés qui
+              analysent les journaux d'événements, trient les alertes en
+              distinguant les vraies attaques des faux positifs, surveillent les
+              comptes utilisateurs et analysent les fuites de données.
+            </p>
+          </div>
+
+          <div class="tool-box" style="margin-bottom: 0">
+            <h4>
+              <a
+                href="https://www.journaldunet.com/cybersecurite/1532295-la-revolution-de-l-ia-dans-la-lutte-contre-la-fatigue-des-alertes-une-nouvelle-ere-pour-les-soc"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: inherit; text-decoration: underline"
+                >La révolution de l'IA dans la lutte contre la fatigue des
+                alertes : une nouvelle ère pour les SOC</a
+              >
+            </h4>
+            <p
+              class="text-gray"
+              style="font-size: 0.85rem; margin: 0 0 0.5rem 0"
+            >
+              Journal du Net · 31 juillet 2024
+            </p>
+            <p class="text-light-gray" style="font-size: 0.92rem; margin: 0">
+              Tribune sur la fatigue des alertes dans les SOC : l'IA peut
+              réduire les faux positifs, hiérarchiser les menaces et déclencher
+              certaines réponses automatiques. L'auteur étant lié à un éditeur
+              de solutions, c'est un point de vue à lire avec recul.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. CONCLUSION -->
+        <div class="card" style="margin-bottom: 2rem">
+          <h3>Conclusion</h3>
+          <p class="text-light-gray" style="margin-top: 1rem">
+            Ma veille montre que l'IA est un accélérateur des deux côtés : elle
+            aide les attaquants à produire plus vite des contenus et des codes
+            malveillants, et les défenseurs à trier, détecter et répondre plus
+            efficacement. Aujourd'hui, selon l'ANSSI, la menace liée à l'IA
+            reste limitée puisqu'aucune attaque entièrement menée par une IA
+            n'est recensée, mais les usages évoluent vite et demandent une
+            réévaluation régulière.
+          </p>
+          <p class="text-light-gray" style="margin-top: 1rem">
+            Pour mon métier d'administrateur systèmes et réseaux, j'en retiens
+            trois enseignements :
+          </p>
+          <ul style="margin-top: 1rem; margin-left: 1.5rem; color: #d4d4d8">
+            <li style="margin-bottom: 0.6rem">
+              Les protections de base restent indispensables : mises à jour,
+              authentification forte, sauvegardes et sensibilisation des
+              utilisateurs au phishing.
+            </li>
+            <li style="margin-bottom: 0.6rem">
+              La détection par signatures ne suffit plus seule : il faut la
+              compléter par de la supervision et de la détection
+              comportementale. Dans l'infrastructure Sitka, cela passe par Snort
+              (IDS/IPS sur pfSense) et par la supervision Nagios XI.
+            </li>
+            <li style="margin-bottom: 0.6rem">
+              L'IA est une aide : le jugement de l'administrateur et l'esprit
+              critique face aux sources restent essentiels.
+            </li>
+          </ul>
         </div>
       </div>
     </main>
